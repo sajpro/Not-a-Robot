@@ -1,0 +1,51 @@
+:root{
+    --color:white;
+    --background: green;
+}
+.wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+    display: block;
+}
+.elements{
+    display: flex;
+    flex-wrap: wrap;
+}
+.element{
+    flex-grow: 1;
+    width: 30%;
+    height: 100px;
+    margin: 10px; 
+    color: var(--color);
+    background-color: var(--background);
+    line-height: 95px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn{
+    color: var(--color);
+    background-color: var(--background);
+    border-color: var(--background);
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+}
+.green{
+    background-color: green;
+    border-color: green;
+}  
+.gray{
+    background-color: gray;
+    border-color: gray;
+} 
+.hidden{
+    display: none;
+}
+.green-color{
+    color: green
+}
