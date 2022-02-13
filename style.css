@@ -49,3 +49,9 @@
 .green-color{
     color: green
 }
+#refresh {
+    padding: 7px 10px;
+    cursor: pointer;
+    margin: 15px auto;
+    display: block;
+}

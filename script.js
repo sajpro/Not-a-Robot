@@ -17,14 +17,19 @@ submitButton.addEventListener('click', (e) => {
 
 const elements = document.querySelectorAll('.element');
 const selectColor = document.querySelector('#selectColor');
+const refresh = document.querySelector('#refresh');
 
 // assign color to the elements
-elements.forEach((element) => {
-	let color = getRandomColor();
-	element.style.backgroundColor = color;
-	element.innerHTML = color;
-	selectColor.innerHTML = color;
-});
+assignColor();
+function assignColor() {
+    elements.forEach((element) => {
+        let color = getRandomColor();
+        element.style.backgroundColor = color;
+        element.innerHTML = color;
+        selectColor.innerHTML = color;
+    });
+}
+
 
 // set default color randomly to match by user clicks 
 getSelectColorRandomly();
@@ -60,4 +65,8 @@ elements.forEach((element) => {
             // location.reload(true);
         }
 	});
+});
+
+refresh.addEventListener('click', ()=>{
+    assignColor();
 });
